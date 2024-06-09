@@ -7,6 +7,7 @@
     <title>Detalhes do Agendamento</title>
 </head>
 <body>
+    <button class="header-btn-login" onclick="redirecionarParaLogin()">Login</button>
     <div class="main-detalhes">
         <div class="detalhes-container">
             <h1>Detalhes do Agendamento</h1>
@@ -59,8 +60,12 @@
         }
 
         function confirmarAgendamento() {
-            // Redireciona para index 1.html
-            window.location.href = "index 1.html";
+            alert("Agendamento confirmado!");
+            fecharModal();
+        }
+
+        function redirecionarParaLogin() {
+            window.location.href = "login.html";
         }
     </script>
 </body>

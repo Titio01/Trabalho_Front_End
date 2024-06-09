@@ -11,7 +11,8 @@ body * {
 
 .main-agendamento,
 .main-login,
-.main-registro {
+.main-registro,
+.main-detalhes {
     width: 100vw;
     height: 100vh;
     background: #23c48e;
@@ -114,11 +115,26 @@ body * {
     cursor: pointer;
     box-shadow: 0px 10px 40px -12px #00ff8052;
 }
+
+/* Estilo para o botão de login no cabeçalho */
+.header-btn-login {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #23c48e;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
 body, html {
     margin: 0;
     padding: 0;
     font-family: 'Noto Sans', sans-serif;
-    background-color: #23c48e; /* Fundo verde */
+    background-color: #23c48e;
     height: 100%;
 }
 
@@ -132,7 +148,7 @@ body, html {
 .detalhes-container {
     text-align: center;
     padding: 20px;
-    background-color: #ffffff; /* Fundo branco do contêiner */
+    background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 80%;
@@ -143,7 +159,7 @@ body, html {
 .detalhes-container h1 {
     font-size: 24px;
     margin-bottom: 20px;
-    color: #23c48e; /* Cor verde para o título */
+    color: #23c48e;
 }
 
 .detalhes-container p {
@@ -174,13 +190,13 @@ body, html {
 }
 
 .modal {
-    display: none; /* Escondido por padrão */
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    background-color: rgba(0, 0, 0, 0.5);
     justify-content: center;
     align-items: center;
     z-index: 1000;
@@ -191,5 +207,87 @@ body, html {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #23c48e;
+    height: 100%;
+}
+
+.main-registro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.registro-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(255, 255, 255, 0.1);
+    color: #333;
+    width: 80%;
+    max-width: 800px;
+}
+
+.registro-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #23c48e;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #d5e6e3;
+    position: relative; /* Adicionado para posicionamento absoluto do botão */
+}
+
+th {
+    background-color: #d5e6e3;
+    color: #23c48e;
+    font-weight: bold;
+}
+
+td {
+    background-color: #f0ffff;
+    color: #23c48e;
+}
+
+.btn-home {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #23c48e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-excluir {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    line-height: 25px;
     text-align: center;
 }
